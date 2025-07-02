@@ -1,0 +1,181 @@
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.projects-section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #0077cc;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 20px;
+}
+
+.project-info h2 {
+  margin-top: 0;
+  color: #0077cc;
+}
+
+.project-links a {
+  display: inline-block;
+  margin-right: 15px;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #0077cc;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.project-links a:hover {
+  background-color: #005fa3;
+}
+
+@media (min-width: 768px) {
+  .project-card {
+    flex-direction: row;
+  }
+
+  .project-img {
+    width: 40%;
+    height: auto;
+  }
+
+  .project-info {
+    width: 60%;
+  }
+}
+
+/* Style for the Project 4 screenshots container */
+.project4-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    align-items: flex-start;
+    margin-bottom: 2em;
+}
+
+.project4-screenshots {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+/* Style for each screenshot image */
+.project4-screenshots img {
+    max-width: 450px;
+    height: auto;
+    display: block;
+}
+
+/* Style for Project 4 description */
+.project4-description {
+    flex: 1;
+    color: #222;
+    background: #fff;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+/* Footer Styles */
+footer {
+    background: #0077cc;
+    color: #fff;
+    padding: 1.5em 0 0.5em 0;
+}
+
+.footer-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1em;
+    margin-right: 2em;
+}
+
+.social-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+    background: #000;
+    padding: 2px;
+    transition: background 0.2s;
+}
+
+.social-icon:hover {
+    background: #ffe600;
+}
+
+.footer-center {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.3em;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.05em;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: #ffe600;
+}
+
+.footer-copy {
+    color: #fff;
+    font-size: 0.93em;
+    text-align: center;
+}
