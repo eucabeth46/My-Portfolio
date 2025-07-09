@@ -2,7 +2,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  background-color: #b0afce;
   color: #333;
 }
 
@@ -14,18 +14,23 @@ body {
 
 .about-header {
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
   align-items: center;
+  gap: 2rem; /* space between image and text/button */
   margin-bottom: 40px;
 }
 
 .profile-pic {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid #0077cc;
+  transition: transform 0.3s cubic-bezier(0.4, 2, 0.6, 1), box-shadow 0.3s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.profile-pic:hover {
+  transform: scale(1.12);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
 }
 
 .typed-name {
@@ -33,24 +38,26 @@ body {
 }
 
 .headline {
+  color: #ffe600;
+  font-size: 1.5rem;
   font-style: italic;
-  color: #555;
-  margin-top: 10px;
+  margin-bottom: 1.2rem;
 }
 
 .btn {
   display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: #0077cc;
-  color: white;
+  padding: 0.7rem 1.5rem;
+  background: #0074d9;
+  color: #fff;
   border-radius: 8px;
   text-decoration: none;
-  transition: background 0.3s ease;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
 }
 
 .btn:hover {
-  background-color: #005fa3;
+  background: #005fa3;
 }
 
 .about-body section {
